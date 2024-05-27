@@ -1,15 +1,17 @@
 #ifndef _AVE_H_
 #define _AVE_H_
-
+#include <iostream>
 #include <string>
+using std::cout;
+using std::string;
 
 class Ave{
-    private:
-        string nombre;
+    /*protected:
+    string nombre;
     public:
-        Ave();
-        Ave(string nom);
-        void volar();
+    Ave(string n);*/
+    public:
+    virtual void volar() = 0;
 };
 
-#endif 
+#endif

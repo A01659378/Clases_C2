@@ -1,13 +1,16 @@
+#include "ave.h"
 #include "aguila.h"
+#include <iostream>
 #include <string>
+using std::cout;
+using std::endl;
+using std::string;
 
-Aguila::Aguila(){
-    
+Aguila::Aguila(string nom) {
+    nombre = nom;
 }
-Aguila::Aguila(string nombre) : Ave(nombre){
-    nombre = nombre;
-}
-void Aguila::volar(){
-    Ave::volar();
-    cout << "Soy una ave llamda " << nombre << "y vuelo , además soy la más rápida" << endl;
+
+void volar(){
+    cout << "Soy un ave y vuelo";
+    cout << " y soy la más rápida" << endl;
 }

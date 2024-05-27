@@ -1,1 +1,1 @@
-aguila.o: aguila.cpp aguila.h
+aguila.o: aguila.cpp ave.h aguila.h
